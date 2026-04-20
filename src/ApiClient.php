@@ -66,7 +66,7 @@ class ApiClient
      *
      * @param Configuration $config config for this ApiClient
      */
-    public function __construct(\BigCommerce\Api\v3\Configuration $config = null)
+    public function __construct(?\BigCommerce\Api\v3\Configuration $config = null)
     {
         if ($config === null) {
             $config = Configuration::getDefaultConfiguration();
